@@ -11,10 +11,10 @@ header {
 }
 
 header img {
-    max-width: 100%; /* Ajusta el ancho máximo al tamaño del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    display: block; /* Asegura que la imagen se muestre como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 #grilla {
     margin: 20px;
