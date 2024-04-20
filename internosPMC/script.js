@@ -121,7 +121,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const fila = tabla.insertRow();
         datos[i].forEach(val => {
             const cell = fila.insertCell();
-            cell.textContent = val;
+            //se agrega un elemento div con el css tooltip
+            const divTooltip = document.createElement('div');
+            divTooltip.classList.add('tooltip');
+            cell.appendChild(divTooltip);
+            //el texto va adentro del div que es el disparador del tooltip
+            divTooltip.textContent = val;
+
+            //se agrega un div que se comportara como tooltip
+            const divTop = document.createElement('div');
+            divTop.classList.add('top');
+            divTooltip.appendChild(divTop);
+            divTop.textContent = "algoQuePuedeVenirEnElArreglo";
         });
 
         // Aplicar estilo a filas con la palabra "INTERNO"
