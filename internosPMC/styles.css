@@ -43,8 +43,9 @@ th, td {
 .tooltip {
     display:inline-block;
     position:relative;
-    border-bottom:1px dotted #666;
+    border-bottom:0px solid #666;
     text-align:left;
+    cursor: pointer;
 }
 
 .tooltip .top {
